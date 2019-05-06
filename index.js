@@ -25,17 +25,18 @@ fs.readFile('./test-page.html', 'utf-8', (err, html) => {
         throw err;
     }
 
-    const dom = new JSDOM(html).window.document.getElementsByTagName('img');
-    let allImages = [];
-    for(let img of dom) {
-        let picture = dom.document.createElement('picture');
+    const dom = new JSDOM(html).window.document;
+    const imgs = dom.getElementsByTagName('img');
+    for(let img of imgs) {
+        let picture = dom.createElement('picture');
         picture.classList = img.classList;
         picture.innerHTML = `
             <source srcset="${img.src.slice(0,-3)}.webp" type="image/webp">
             <source srcset="${img.src}" type="image/${img.src.substr(img.src.length - 3)}">
             <img src="${img.src}" alt="${img.alt}">
         `;
-        img.parentNode.replaceChild(img, picture);
+        img.replaceWith(img, picture);
+        console.log(imgs);
     };
-    console.log(allImages);
+    console.log(imgs);
 });
