@@ -1,32 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    <img src="https://via.placeholder.com/350x150.png"  />
+    <picture>
+                <source srcset="https://via.placeholder.com/350x150.webp" type="image/webp">
+                <source srcset="https://via.placeholder.com/350x150.png" type="image/png">
+                <img src="https://via.placeholder.com/350x150.png" alt="">
+            </picture>
     <br>
-    <img src="https://via.placeholder.com/350x150.png" />
+    <picture>
+                <source srcset="https://via.placeholder.com/350x150.webp" type="image/webp">
+                <source srcset="https://via.placeholder.com/350x150.png" type="image/png">
+                <img src="https://via.placeholder.com/350x150.png" alt="">
+            </picture>
     <br>
-    <img src="https://via.placeholder.com/350x150.png" />
+    <picture>
+                <source srcset="https://via.placeholder.com/350x150.webp" type="image/webp">
+                <source srcset="https://via.placeholder.com/350x150.png" type="image/png">
+                <img src="https://via.placeholder.com/350x150.png" alt="">
+            </picture>
     <br>
-    <img src="https://via.placeholder.com/350x150.png" />
+    <picture>
+                <source srcset="https://via.placeholder.com/350x150.webp" type="image/webp">
+                <source srcset="https://via.placeholder.com/350x150.png" type="image/png">
+                <img src="https://via.placeholder.com/350x150.png" alt="">
+            </picture>
     <br>
     <script>
-    // let allImages = document.getElementsByTagName('img');
-    // for(let img of allImages){
-    //     let currentImg = img;
-    //     let picture = document.createElement('picture');
-    //     picture.innerHTML = `
-    //     <source srcset="${img.src.slice(0,-4)}.webp" type="image/webp">
-    //     <source srcset="${img.src}" type="image/${img.src.substr(img.src.length - 3)}">
-    //     <img src="${img.src}" alt="${img.alt}">
-    //     `;
-    //  img.replaceWith(picture);
-    // }
+        // let allImages = document.getElementsByTagName('img');
+        // for (let img of allImages) {
+        //     let currentImg = img;
+        //     let picture = document.createElement('picture');
+        //     picture.innerHTML = `
+        // <source srcset="${img.src.slice(0,-4)}.webp" type="image/webp">
+        // <source srcset="${img.src}" type="image/${img.src.substr(img.src.length - 3)}">
+        // <img src="${img.src}" alt="${img.alt}">
+        // `;
+        //     img.replaceWith(picture);
+        // }
     </script>
+
+
 </body>
-</html>

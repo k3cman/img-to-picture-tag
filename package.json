@@ -9,7 +9,9 @@
   "author": "Nemanja Kecman",
   "license": "MIT",
   "dependencies": {
+    "glob": "^7.1.3",
     "jsdom": "^15.0.0",
-    "node-html-parser": "^1.1.15"
+    "node-html-parser": "^1.1.15",
+    "xmlserializer": "^0.6.1"
   }
 }
